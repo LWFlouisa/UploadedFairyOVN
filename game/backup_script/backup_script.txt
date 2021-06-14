@@ -1,0 +1,135 @@
+﻿# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+# define e = Character("Hemato")
+
+define gui.text_size = 28
+
+define h = Character("Hemato", kind=nvl, what_color="#C10415", what_font="font/HafestranFont-Regular.otf")
+define m = Character("Marine", kind=nvl, what_color="#269A03", what_font="font/HafestranFont-Regular.otf")
+define f = Character("Astronaut", kind=nvl, what_color="#0A306E", what_font="font/HafestranFont-Regular.otf")
+define e = Character("Ehena", kind=nvl, what_color="#269A03", what_font="font/HafestranFont-Regular.otf")
+
+# With T being chapter title
+define t = Character(None, kind=nvl, what_color="#269A03", what_font="font/HafestranFont-Regular.otf")
+
+define menu = nvl_menu
+
+default book = True
+
+# Page One Frames
+image bg p1_frame1 = Tile("images/individualframes/pageone/frame1.png")
+image bg p1_frame2 = Tile("images/individualframes/pageone/frame2.png")
+image bg p1_frame3 = Tile("images/individualframes/pageone/frame3.png")
+image bg p1_frame4 = Tile("images/individualframes/pageone/frame4.png")
+image bg p1_frame5 = Tile("images/individualframes/pageone/frame5.png")
+
+# Page Two Frames
+image bg p2_frame1 = Tile("images/individualframes/pagetwo/frame1.png")
+image bg p2_frame2 = Tile("images/individualframes/pagetwo/frame2.png")
+image bg p2_frame3 = Tile("images/individualframes/pagetwo/frame3.png")
+image bg p2_frame4 = Tile("images/individualframes/pagetwo/frame4.png")
+
+# Page Three Frames
+image bg p3_frame1 = Tile("images/individualframes/pagethree/frame1.png")
+image bg p3_frame2 = Tile("images/individualframes/pagethree/frame2.png")
+image bg p3_frame3 = Tile("images/individualframes/pagethree/frame3.png")
+image bg p3_frame4 = Tile("images/individualframes/pagethree/frame4.png")
+
+# Page Four Frames
+image bg p4_frame1 = Tile("images/individualframes/pagefour/frame1.png")
+image bg p4_frame2 = Tile("images/individualframes/pagefour/frame2.png")
+image bg p4_frame3 = Tile("images/individualframes/pagefour/frame3.png")
+image bg p4_frame4 = Tile("images/individualframes/pagefour/frame4.png")
+
+# Page Five Frames
+image bg p5_frame1 = Tile("images/individualframes/pagefive/frame1.png")
+image bg p5_frame2 = Tile("images/individualframes/pagefive/frame2.png")
+
+# Background Art
+image bg titlepage = Tile("images/growninavat.png")
+
+# The game starts here.
+label start:
+
+    show bg p1_frame1
+
+    pause 6.0
+
+    show bg p1_frame2
+
+    pause 6.0
+
+    show bg p1_frame3
+
+    pause 6.0
+
+    show bg p1_frame4
+
+    pause 6.0
+
+    show bg p1_frame5
+
+    pause 10.0
+
+    show bg p2_frame1
+
+    pause 6.0
+
+    show bg p2_frame2
+
+    pause 6.0
+
+    show bg p2_frame3
+
+    pause 6.0
+
+    show bg p2_frame4
+
+    pause 6.0
+
+    jump page_three
+
+    show bg p3_frame1
+
+    pause 6.0
+
+    show bg p3_frame2
+
+    pause 20.0
+
+    show bg p3_frame3
+
+    pause 6.0
+
+    show bg p3_frame4
+
+    pause 10.0
+
+    show bg p4_frame1
+
+    pause 6.0
+
+    show bg p4_frame2
+
+    pause 6.0
+
+    show bg p4_frame3
+
+    pause 6.0
+
+    show bg p4_frame4
+
+    pause 6.0
+
+    show bg p5_frame1
+
+    pause 6.0
+
+    show bg p5_frame2
+
+    pause 12.0
+
+    return
